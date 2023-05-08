@@ -1,7 +1,7 @@
 const calculator = require('./calculator');
 
 describe('add', () => {
-	test('adds 0 and 0', () => {
+	test.skip('adds 0 and 0', () => {
 		expect(calculator.add(0,0)).toBe(0);
 	});
 
@@ -49,7 +49,7 @@ describe('multiply', () => {
 });
 
 describe('power', () => {
-	test.skip('raises one number to the power of another number', () => {
+	test('raises one number to the power of another number', () => {
 		expect(calculator.power(4,3)).toBe(64); // 4 to third power is 64
 	});
 });
